@@ -1,7 +1,7 @@
 # Data Engineer Id/X Partners
 
 # Work Environment
-**Tools** : Microsoft SQL Server, SQL Server Managem3nt Studio & Talend Open Studio  <br>
+**Tools** : Microsoft SQL Server, SQL Server Management Studio & Talend Open Studio  <br>
 **Programming Languange** : SQL <br>
 
 # Introduction
@@ -15,12 +15,12 @@ Berikut hasil dari menjalankan perintah Execute Store Procedure pada hasil akhir
 ![Final](Final.PNG)
 
 # Result
-Saya berhasil membuat Data Warehouse, dan memindahkan datanya dari Database Sumber menuju Data Warhouse untuk kebutuhan client dan membuat Stored Procedure yang saya beri nama **summary_order_status** dengan menggunakan tools SQL Server, SQL Server Managemant Studio & Talend Open Studio. 
+Saya berhasil membuat Data Warehouse, dan memindahkan datanya dari Database Sumber menuju Data Warhouse untuk kebutuhan client dan membuat Stored Procedure yang saya beri nama **summary_order_status** dengan menggunakan tools SQL Server, SQL Server Management Studio & Talend Open Studio. 
 
-**Langkah Pertama** saya melakukan restore file Staging di tools SQL Server Managemant Studio (SSMS).
+**Langkah Pertama** saya melakukan restore file Staging di tools SQL Server Management Studio (SSMS).
 ![Langkah_Pertama](Pic_Langkah_Pertama.png)
 
-**Langkah Kedua** saya membuat database baru yang saya beri nama **DWH_Project** dan membuat beberapa table diantaranya 1 table Fact yaitu table FactSalesOrder dan beberapa table Dimansion yaitu table DimCustomer, DimProduct dan DimStatusOrder di SQL Server Managemant Studio (SSMS).
+**Langkah Kedua** saya membuat database baru yang saya beri nama **DWH_Project** dan membuat beberapa table diantaranya 1 table Fact yaitu table FactSalesOrder dan beberapa table Dimansion yaitu table DimCustomer, DimProduct dan DimStatusOrder di SQL Server Management Studio (SSMS).
 ![Langkah_Kedua](Pic_Langkah_Kedua.png)
 
 **Langkah Ketiga** saat menggunakan tool Talend Open Studio pada proses pemindahan data, pertama yang harus dilakukan mengkoneksikan tools Talend & SSMS terlebih dahulu. Setelah terkoneksi saya menuju **Job Design** lalu membuat lembar kerja baru untuk proses pemindahan data. Pada proses pemindahan data saya menggunakan komponen **tMSSqlInput**, dan **tMSSqlOutput**, lalu pada table customer saya melakukan transfrom pada kolom first_name dan last_name yang nanti akan saya gabungkan menjadi satu kolom di table DimCustomer yang saya beri nama kolomnya CustomerName, lalu pada huruf yang berada di kolom Customer name saya akan ubah menjadi kapital menggunakan fungsi UPCASE. Proses transform tersebut menggunakan komponen **tMap**.
