@@ -1,7 +1,7 @@
 # Data Engineer Id/X Partners
 
 # Work Environment
-**Tools** : Microsoft SQL Server, SQL Server Managemant Studio & Talend Open Studio  <br>
+**Tools** : Microsoft SQL Server, SQL Server Managem3nt Studio & Talend Open Studio  <br>
 **Programming Languange** : SQL <br>
 
 # Introduction
